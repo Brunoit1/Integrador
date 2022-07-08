@@ -149,14 +149,15 @@ padding: 0.8rem 1.6rem;
 .lista-1 {
     position: absolute;
     flex-direction: column;
-    top: 150px;
+    top: 100px;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
     display: none;
     z-index: 1;
     background-color: var(--yellow);
     gap: 100px;
     padding-right: 200px;
+    
 }
 
 #toggle-menu:checked + .lista-1 {
