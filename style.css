@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --blue:#0d0f45;
+    --yellow:#e6e0bb;
+    --black:#131415;
+}
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.section-container {
+    background-color: var(--yellow);
+    border-bottom: #0d0f45 solid 1px;
+    position: sticky;
+    top: 0;
+
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width:  95%;
+    max-width: 1300px;
+    padding: 70px 0px;
+}
+
+
+
+.header {
+    background-color: var(--yellow);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: column;
+    margin: 0 auto;
+    max-width: 1300px;
+
+   
+}
+
+.logo-mio {
+    height: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.lista-1 {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+    align-items:center ;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.navbar a {
+    color: var(--blue);
+}
+
+.button-1 {
+background-color: var(--blue);
+border: var(--yellow) solid;
+padding: 0px 50px;
+border-radius: 20px;
+transition: all 0.5s linear;
+width: 200px;
+padding: 0.8rem 1.6rem;
+}
+
+.button-1 a {
+    color: var(--yellow);
+    font-size: 1rem;
+    
+}
+
+
+.button-1:hover {
+    background-color: var(--yellow);
+    border: var(--blue) solid;
+    transition: all 0.5s linear;
+    font-weight: 600;
+
+}
+
+.button-1 a:hover {
+    color: var(--blue);
+    transition: all 0.5s linear;
+    font-weight: 600;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.navbar i {
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+
+
+@media (max-width:992px) {
+
+
+.lista-1 {
+    gap: 50px;
+    padding-left: 200px;
+  }
+
+
+.navbar i {
+    display: block;
+}
+
+.lista-1 {
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: none;
+    z-index: 1;
+    background-color: var(--yellow);
+    gap: 100px;
+    padding-right: 200px;
+}
+
+#toggle-menu:checked + .lista-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+}
+
+.section-container-1 {
+    background-color: var(--yellow);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1300px;
+
+}
+
+.hero-information {
+    display: flex;
+    justify-content: space-between;
+    gap: 500px;
+    
+}
+
+.text-container {
+    display:flex ;
+    flex-wrap: wrap;
+    width: 450px;    
+    font-weight: 400;
+
+}
+
+.text-container h2 {
+font-size: 2rem;
+
+}
+
+.text-container p {
+    font-size: 1.5rem;
+}
+
+.img-hero img {
+    width: 500px;
+    height: 300px;
+}
+
+.section-container-2 {
+    background-color: var(--yellow);
+    height: 100vh;
+}
+
+#Skins {
+    width: 95%;
+    height: 80vh;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction:column;
+    gap: 50px;
+    /* background-color: #0d0f45; */
+
+
+}
+
+.container-cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* width: 0 auto; */
+
+}
+
+.skins-cards {
+    width: 12%;
+    height: 25vh;
+    display: flex;
+    align-items:center;
+    border: var(--blue) solid;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.skins-cards p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.skins-cards span {
+    font-weight: 400;
+    position: absolute;
+    top: 180px;
+}
+
+.skins-cards img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.texto-cards {
+    margin-top: 390px;
+    border-bottom: #131415 solid 2px;
+}
+
+.section-container-3 {
+    background-color: var(--yellow);
+}
+
+
+.footer {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.footer-text {
+    /* background-color: aliceblue; */
+    display: flex;
+    padding-top: 400px;
+    border-bottom: var(--blue) solid 1px;
+    
+}
+
+.footer-text-2 button {
+    font-weight: 400;
+    font-size: 1.5rem;
+    border: var(--black)  solid 1px;
+    background-color: var(--black);
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--yellow);
+    
+
+}
+
+
+.icons  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.icons-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icons-1 i {
+    text-decoration: none;
+    list-style: none;
+    color: var(--black);
+    font-size: 25px;
+}
+
+@media (max-width:992px) {
+
+/* Hero */
+.hero-information {
+    flex-direction: column;
+}
+
+.img-hero {
+display: none;
+}
+
+.text-container h2 {
+margin-bottom: 50px;
+margin-left: 75px;
+}
+
+.text-container p {
+    font-size:  20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Skins y Cards */
+
+.container-cards {
+    gap: 20px;
+    display: grid;
+    grid-template-columns:100px 100px 100px;
+    
+
+}
+
+.skins-cards {
+ width: 100px;
+ height: 150px;
+ flex-wrap: wrap;
+
+}
+
+.skins-cards img {
+    width: 50px;
+    height: 50px;
+}
+
+.skins-cards span {
+    top: 120px;
+}
+
+.skins-cards p {
+    font-size: 15px;
+}
+
+}
