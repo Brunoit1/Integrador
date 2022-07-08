@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    /* border: #131415 1px solid; */
 }
 
 :root {
@@ -17,6 +18,7 @@ html {
 
 body {
     width: 100%;
+    background-color: var(--yellow);
 }
 
 .section-container {
@@ -24,6 +26,7 @@ body {
     border-bottom: #0d0f45 solid 1px;
     position: sticky;
     top: 0;
+    z-index: 9999;
 
 }
 
@@ -35,6 +38,7 @@ body {
     width:  95%;
     max-width: 1300px;
     padding: 70px 0px;
+    
 }
 
 
@@ -49,7 +53,7 @@ body {
     flex-wrap: column;
     margin: 0 auto;
     max-width: 1300px;
-
+    
    
 }
 
@@ -68,6 +72,7 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+    
 }
 
 .lista-1 {
@@ -144,7 +149,7 @@ padding: 0.8rem 1.6rem;
 .lista-1 {
     position: absolute;
     flex-direction: column;
-    top: 100px;
+    top: 150px;
     width: 100%;
     height: calc(100vh - 100px);
     display: none;
@@ -170,6 +175,7 @@ padding: 0.8rem 1.6rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     
 }
 
@@ -179,6 +185,7 @@ padding: 0.8rem 1.6rem;
     align-items: center;
     flex-direction: column;
     max-width: 1300px;
+    width: 100%;
 
 }
 
@@ -186,6 +193,8 @@ padding: 0.8rem 1.6rem;
     display: flex;
     justify-content: space-between;
     gap: 500px;
+    
+    
     
 }
 
@@ -214,6 +223,7 @@ font-size: 2rem;
 .section-container-2 {
     background-color: var(--yellow);
     height: 100vh;
+    
 }
 
 #Skins {
@@ -353,25 +363,38 @@ font-size: 2rem;
 display: none;
 }
 
+.text-container {
+    padding:0px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .text-container h2 {
 margin-bottom: 50px;
-margin-left: 75px;
+margin-left: 25px;
 }
 
 .text-container p {
     font-size:  20px;
     display: flex;
-    flex-wrap: wrap;
+    
+    
+    
 }
 
 /* Skins y Cards */
 
-.container-cards {
-    gap: 20px;
-    display: grid;
-    grid-template-columns:100px 100px 100px;
-    
+.section-container-2 {
+    width: 100;
+}
 
+.container-cards {
+    gap: 10px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    
 }
 
 .skins-cards {
@@ -392,6 +415,10 @@ margin-left: 75px;
 
 .skins-cards p {
     font-size: 15px;
+}
+
+.texto-cards {
+    margin-top: 100px;
 }
 
 }
