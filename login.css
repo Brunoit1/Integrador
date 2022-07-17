@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    background-color: #131415;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.contenedor-login {
+    background-color: #e6e0bb;
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.texto-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.correo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+}
+
+.correo input {
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    border: 1px #131415 solid;
+    
+    
+    
+}
+
+
+
+.texto-login {
+    font-size: 20px;
+}
+
+
+.botones {
+    display: flex;
+    gap: 80px;
+}
+
+.botones a {
+    text-decoration: none;
+    list-style: none;
+    color: #131415;
+}
+
+.botones span {
+    font-weight: 600;
+}
+
+.botones button {
+    padding: 5px;
+    border-radius: 5px;
+    border: #131415 1px solid;
+    box-shadow: 0 0 26px rgb(0, 0, 0, 0.2);
+    background-color: #e6e0bb;
+    
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 20px; 
+    text-align: center;
+    
+}
+
+.redes button {
+    padding: 10px;
+    display: flex;
+    border: #131415 solid 1px;
+    border-radius: 30px;
+    
+}
+
+.redes a {
+    text-decoration: none;
+    list-style: none;
+   
+
+}
+
+.redes i {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+
+.steam i {
+   color: rgb(23, 26, 33);
+
+}
+
+.steam {
+    background-color: #e7e7e7;
+}
+
+.steam a {
+    color: #131415;
+
+}
+
+
+
+.google i {
+    color: #4285f4;
+}
+
+
+.google {
+    background-color: #e7e7e7;
+}
+
+
+.google a {
+    color: #4285f4;
+}
+
+
+.red-especial {
+    
+}
+
+.red-especial button {
+    padding: 8px;
+    display: flex;
+    border: #131415 solid 1px;
+    border-radius: 10px;
+    background-color: rgb(22, 111, 229);
+}
+
+.red-especial a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+   
+
+}
+
+.red-especial i {
+    margin-right: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+   .contenedor-login {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+    gap: 40px;
+
+   }
+
+   .contenedor {
+    width: 100%;
+    height: 100vh;
+    padding-left: 500px;
+    background-image: url(./img/akfictisia.jpg);
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position-y: center;
+   }
+
+   .botones {
+    font-size: 20px;
+   }
+
+   .botones button {
+    padding: 10px 40px;
+    font-size: 15px;
+   }
+   
+   .correo {
+    gap: 15px;
+   }
+
+   .correo input {
+    padding: 10px;
+    width: 400px;
+    border-radius: 30px;
+    
+   }
+   
+.redes {
+    flex-direction: row;
+}
+
+.red-especial {
+    height: 30%;
+
+}
+
+}
