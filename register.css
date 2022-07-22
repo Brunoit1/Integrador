@@ -154,3 +154,40 @@ html {
     text-decoration: none;
     color: white;
 }
+
+
+@media (max-width:1400px) {
+
+    .formulario input {
+        width: 300px;
+    }
+
+}
+
+@media (max-width:1200px) {
+
+    .formulario input {
+        width: 200px;
+    }
+
+    .label1 p {
+        padding: 0;
+    }
+}
+
+@media (max-width:992px) {
+
+    .imagen-container {
+        display: none;
+    }
+
+    .formulario input {
+
+        width: 250px;
+
+    }
+
+    .register-container {
+        width: 75%;
+    }
+}
