@@ -2,8 +2,155 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid salmon; */
 }
 
-body {
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #131415;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.imagen-container {
+    width: 25%;
+    height: 95vh;
+    background-color: #e6e0bb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagen-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.register-container {
+    width: 25%;
+    height: 95vh;
+    background-color: #433f50;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    color: white;
+
+}
+
+.register-container h1, h2{
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.register-container h2 {
+    padding-bottom: 20px;
+}
+
+
+.formulario input {
+    padding: 8px;
+    width: 350px;
+    display: flex;
+    background-color: #433f50;
+    border: gray 1px solid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    
+    
+}
+
+.formulario  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 15px; 
+    
+    
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.aceptar-terminos {
+    display: flex;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.checkbox1 {
+    background-color: chocolate;
+}
+
+.label1 {
+    display: flex;
+    /* background-color: red; */
+    height:100%;
+    width: 900px;
+    font-size: 12px;
+    padding-right: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.label1 p {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+
+.boton {
+    display: flex;
+    justify-content: center;
+
+}
+
+.boton button {
+    background-color: #433f50;
+    border: gray solid 1px;
+    width: 200px;
+    height: 25px;
+    
+
+}
+
+.boton a {
+    text-decoration: none;
+    color: white;
 }
