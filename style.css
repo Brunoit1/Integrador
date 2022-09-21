@@ -229,7 +229,6 @@ font-size: 2rem;
     height: 100%;
     width: 100%;
     max-width: 1300px;
-
     margin: 0 auto;
 
     
@@ -539,6 +538,10 @@ margin-left: 25px;
 
     @media (max-width:992px) {
 
+        .header{
+            width: 90%;
+        }
+
 
         .section-container-1{
             /* border: 1px solid red; */
@@ -551,6 +554,12 @@ margin-left: 25px;
             /* border: 1px solid black; */
             max-width: 1000px;
             width: 100%;
+        }
+
+        .section-container-2 {
+             max-width: 992px;
+             width: 90%;
+
         }
 
         
