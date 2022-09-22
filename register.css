@@ -13,6 +13,7 @@ html {
     width: 100%;
     height: 100vh;
     background-color: #131415;
+    box-shadow: 0 0 26px rgba(255, 255, 255, 0.856);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +23,8 @@ html {
 .imagen-container {
     width: 25%;
     height: 95vh;
-    background-color: #e6e0bb;
+    background-color: #131415;
+    box-shadow: 0 0 26px rgba(255, 255, 255, 0.856);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +39,8 @@ html {
 .register-container {
     width: 25%;
     height: 95vh;
-    background-color: #433f50;
+    background-color: #ff6543;
+    /* box-shadow: 0 0 26px rgba(255, 255, 255, 0.856); */
     display: flex;
     flex-direction: column;
     padding-top: 20px;
@@ -62,7 +65,7 @@ html {
     padding: 8px;
     width: 350px;
     display: flex;
-    background-color: #433f50;
+    background-color: white;
     border: gray 1px solid;
     justify-content: center;
     align-items: center;
@@ -142,7 +145,7 @@ html {
 }
 
 .boton button {
-    background-color: #433f50;
+    background-color: #131415;
     border: gray solid 1px;
     width: 200px;
     height: 25px;

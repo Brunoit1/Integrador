@@ -6,10 +6,14 @@
     /* border: #131415 1px solid; */
 }
 
+body {
+    color: white;
+}
+
 :root {
-    --blue:#0d0f45;
-    --yellow:#e6e0bb;
-    --black:#131415;
+    --blue:#ff6543;
+    --yellow:#131415;
+    --black:#e6e0bb;
 }
 
 html {
@@ -55,17 +59,20 @@ body {
     flex-wrap: column;
     margin: 0 auto;
     max-width: 1300px;
+    position: relative;
     
    
 }
 
-.logo-mio {
-    height: -20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
+.logo-mio img {
+    width: 80px;
+    /* margin-right: 100px; */
+    position: absolute;
+    top:10px;
+    right:1300px ;
 }
+
 
 
 
@@ -268,7 +275,8 @@ font-size: 2rem;
     display: flex;
     align-items:center;
     text-align: center;
-    border: var(--blue) solid;
+    /* border: var(--blue) solid; */
+    box-shadow: 0 0 26px rgba(255, 102, 67, 0.419);
     background-color: white;
     border-radius: 10px;
     flex-direction: column;
@@ -281,10 +289,15 @@ font-size: 2rem;
     
 }
 
+.skins-cards span {
+    color: #131415;
+}
+
 .skins-cards p {
     font-weight: 600;
     font-size: 15px;
     transition: all 0.5s linear;
+    color: #131415;
 }
 
 
@@ -293,10 +306,10 @@ font-size: 2rem;
     display: flex;
     text-align: center;
     color: var(--black);
-    background-color: white;
-    border: 1px var(--black) solid;
-
-   
+    padding: 4px;
+    /* background-color:var(--black); */
+    border: 1px var(--blue) solid;
+    color: var(--yellow);
 }  
 
 
@@ -316,7 +329,7 @@ font-size: 2rem;
 
 .texto-cards {
     margin-top: 390px;
-    border-bottom: var(--black) solid 2px;
+    border-bottom: var(--blue) solid 2px;
 }
 
 .section-container-3 {
@@ -345,8 +358,8 @@ font-size: 2rem;
 .footer-text-2 button {
     font-weight: 400;
     font-size: 1.5rem;
-    border: var(--black)  solid 1px;
-    background-color: var(--black);
+    /* border: white  solid 1px; */
+    background-color: var(--blue);
     margin-left: 20px;
     padding: 5px;
     border-radius: 5px;
@@ -374,7 +387,7 @@ font-size: 2rem;
 .icons-1 i {
     text-decoration: none;
     list-style: none;
-    color: var(--black);
+    color: var(--blue);
     font-size: 25px;
 }
 
@@ -476,9 +489,6 @@ margin-left: 25px;
     border-radius: 5px;
     display: flex;
     text-align: center;
-    color: var(--black);
-    background-color: white;
-    border: 1px var(--black) solid;
     padding: 3px;
     
 }  
@@ -630,9 +640,6 @@ margin-left: 25px;
             border-radius: 5px;
             display: flex;
             text-align: center;
-            color: var(--black);
-            background-color: white;
-            border: 1px var(--black) solid;
             padding: 3px;
            
         }  

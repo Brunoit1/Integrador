@@ -21,7 +21,7 @@ html {
 
 
 .contenedor-login {
-    background-color: #e6e0bb;
+    background-color: #131415;
     width: 80%;
     height: 70vh;
     display: flex;
@@ -54,7 +54,7 @@ html {
     border-radius: 5px;
     width: 300px;
     display: flex;
-    border: 1px #131415 solid;
+    border: 1px #ff6543 solid;
     
     
     
@@ -64,6 +64,7 @@ html {
 
 .texto-login {
     font-size: 20px;
+    color: #ff6543;
 }
 
 
@@ -75,7 +76,7 @@ html {
 .botones a {
     text-decoration: none;
     list-style: none;
-    color: #131415;
+    color: #ff6543;
 }
 
 .botones span {
@@ -86,8 +87,9 @@ html {
     padding: 5px;
     border-radius: 5px;
     border: #131415 1px solid;
-    box-shadow: 0 0 26px rgb(0, 0, 0, 0.2);
-    background-color: #e6e0bb;
+    box-shadow: 0 0 26px rgba(255, 102, 67, 0.419);
+    background-color: #ff6543;
+    color: white;
     
 }
 
@@ -152,9 +154,6 @@ html {
 }
 
 
-.red-especial {
-    
-}
 
 .red-especial button {
     padding: 8px;
